@@ -1,6 +1,11 @@
 # Rendering-with-Three.JS
 
 ## Plan of Action
+1. The Basics
+2. Fiber
+3. Drei
+4. Spring
+5. Rapier
 
 ## References
 1. https://threejs.org/
