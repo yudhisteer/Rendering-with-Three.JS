@@ -1,16 +1,18 @@
-# Rendering-with-Three.JS
+# Rendering with Three.JS - Part I
 
 ## Plan of Action
-1. The Basics
-2. Fiber
-3. Drei
-4. Spring
-5. Rapier
+1. [Hello, Cube!](#hc)
+2. [Transformations](#t)
+3. [Animations](#a)
+4. [Cameras](#c)
+5. [Geometries](#g)
+6. [Textures](#tx)
+7. [Materials](#m)
 
 
 ------------
-
-## 1. The Basics
+<a name="hc"></a>
+## 1. Hello, Cube!
 
 ```js
 import * as THREE from "./three.module.min.js";
@@ -44,6 +46,23 @@ renderer.render(scene, camera); // render the scene and camera
 ```
 
 ![image](https://github.com/user-attachments/assets/48d8572a-6920-4c1a-a6df-7ca2588e25cb)
+
+
+------------
+<a name="t"></a>
+## 2. Transformations
+
+
+
+------------
+
+
+
+
+
+
+
+
 
 
 ## References
