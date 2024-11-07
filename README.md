@@ -13,39 +13,76 @@
 ------------
 <a name="hc"></a>
 ## 1. Hello, Cube!
+In this "Hello, World!" example, we will show how to render a cube with Three.JS. For thatwe need four elements: **a scene, an object, a camera and a renderer**. And voila!
+
+### 1.1 The Scene
+The Scene is this **container** where we want to add all our objects, cameras, models etc for Three.JS to render. 
 
 ```js
-import * as THREE from "./three.module.min.js";
-
-// 1. Scene
-const scene = new THREE.Scene();
-
-// 2. Mesh
-const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ color: "red" });
-const mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh); 
-
-// 3. Camera
-// The PerspectiveCamera constructor takes four arguments:
-// 1. fov (Field of View): The vertical field of view in degrees. A value of 75 means the camera will capture a wide view.
-// 2. aspect: The aspect ratio, which is the width of the viewport divided by its height. This ensures the camera's view is correctly proportioned.
-// 3. near: The near clipping plane distance. Objects closer than this distance will not be rendered. A value of 0.1 means objects closer than 0.1 units will be ignored.
-// 4. far: The far clipping plane distance. Objects further than this distance will not be rendered. A value of 100 means objects beyond 100 units will be ignored.
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 2000);
-camera.position.z = 5;
-camera.position.x = 1;
-camera.position.y = 1;
-scene.add(camera);
-
-// 4. Renderer
-const canvas = document.querySelector(".draw");  // select the canvas element from the HTML
-const renderer = new THREE.WebGLRenderer({ canvas }); // create a new WebGL renderer
-renderer.setSize(window.innerWidth, window.innerHeight); // set the size of the renderer to the size of the window
-renderer.render(scene, camera); // render the scene and camera
+// Scene
+const scene = new THREE.Scene() // A scene is a container for all objects
 ```
 
-![image](https://github.com/user-attachments/assets/48d8572a-6920-4c1a-a6df-7ca2588e25cb)
+### 1.2 The Object
+We want to render an Object in our Scene. What is this object? It can be a mesh or particles or lights etc,.. In our case, we want our object to have the geometry of a cube and a material of color "yellow". We will then build a Mesh from the geometry and material. Finally, we would want to add that objct to our scene in order to be rendered.
+
+```js
+const geometry = new THREE.BoxGeometry(1, 1, 1) // 1 meter wide, 1 meter high, 1 meter deep
+const material = new THREE.MeshBasicMaterial({ color: 'yellow' }) // material of color yellow
+const mesh = new THREE.Mesh(geometry, material) // A mesh is a combination of a geometry and a material
+scene.add(mesh) // Add the mesh to the scene
+```
+
+### 1.3 The Camera
+The camera is the ```point of view``` we want to render our scene. We will use a **Perspective Camera** type with FOV of ```75 deg``` and the aspect ratio defined below. Similarly, we will need to add the camera to the scene.
+
+``` js
+const sizes = {
+    width: 800,
+    height: 600
+}
+
+const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height) // 75 degrees field of view, aspect ratio of the width to the height
+scene.add(camera) // Add the camera to the scene
+```
+
+
+### 1.4 The Renderer
+The job of the renderer is to render the scene from the camera's point of view which will be displayed on a **canvas**. We can add a canvas to the HTML file and send it to the renderer. We will use ```WebGLRenderer``` to create the renderer.
+
+```js
+// Canvas
+const canvas = document.querySelector('canvas.webgl') // Get the canvas element
+
+const renderer = new THREE.WebGLRenderer({
+    canvas: canvas
+}) // Create a renderer that will render the scene to the canvas
+renderer.setSize(sizes.width, sizes.height) // Set the size of the renderer to the size of the canvas
+renderer.render(scene, camera) // Render the scene to the canvas
+```
+
+When we first render our scene, we have a black render because the object and the camera are all at the location. 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b8981b88-a959-4b0b-873b-e6bf2ba0c961" width="50%" />
+</p>
+
+
+```js
+camera.position.z = 3 // 3 meters away from the scene
+```
+
+In order to see the cube, we can move the camera and/or move the object. We can control the ```x```, ```y``` and ```z``` direction for both the camera and object we want to move. And tadaa!!!
+
+```js
+mesh.position.x = .5 // .5 meters to the right
+mesh.rotation.y = .5 // .5 radians (28.65 degrees) around the y-axis
+```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1e097199-572f-46c6-9f2c-74a7cfaf3bf4" width="50%" />
+</p>
+
+
 
 
 ------------
