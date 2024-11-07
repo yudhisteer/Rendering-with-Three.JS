@@ -181,6 +181,43 @@ console.log(mesh.position.distanceTo(camera.position)) // get the distance betwe
 ### 2.3 Rotation
 
 
+<table>
+  <tr>
+    <th></th>
+    <th>0.25</th>
+    <th>0.5</th>
+    <th>0.75</th>
+  </tr>
+  <tr>
+    <td>Changing X</td>
+    <td><img src="https://github.com/user-attachments/assets/6225e917-093f-4d27-8e99-747cd43cb7a3" alt="Image -1, Row 1" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/048ffaf6-5508-427c-965a-f0857fbc661e" alt="Image 0, Row 1" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/1200e424-ca71-411b-ad08-933c2774bd8f" alt="Image 1, Row 1" width="150"></td>
+  </tr>
+  <tr>
+    <td>Changing Y</td>
+    <td><img src="https://github.com/user-attachments/assets/8a2b5376-70a2-4982-bfa4-1d2f59ff4676" alt="Image -1, Row 2" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/048ffaf6-5508-427c-965a-f0857fbc661e" alt="Image 0, Row 2" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/2b58e15b-9c25-40f4-b7ec-b6489bec5d05" alt="Image 1, Row 2" width="150"></td>
+  </tr>
+  <tr>
+    <td>changing Z</td>
+    <td><img src="https://github.com/user-attachments/assets/d480abda-b326-4a9d-9d2e-bd1fb0c6f405" alt="Image -1, Row 3" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/048ffaf6-5508-427c-965a-f0857fbc661e" alt="Image 0, Row 3" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/5deebe15-7652-4bb7-af19-b2da74873f17" alt="Image 1, Row 3" width="150"></td>
+  </tr>
+</table>
+
+
+
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/b8c5acc4-c8bc-4053-892b-8896ba6e556c" alt="Image 1" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/ee294878-3bf2-47d2-981f-28eb18df8843" alt="Image 2" width="300"></td>
+  </tr>
+</table>
+
 
 ------------
 
