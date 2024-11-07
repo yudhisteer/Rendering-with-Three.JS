@@ -89,7 +89,18 @@ mesh.rotation.y = .5 // .5 radians (28.65 degrees) around the y-axis
 <a name="t"></a>
 ## 2. Transformations
 
+```js
+const axesHelper = new THREE.AxesHelper(2) // create a new axes helper with a size of 2
+scene.add(axesHelper) // add the axes helper to the scene as it is an object
+```
+
 ### 2.1 Position
+
+```js
+mesh.position.z = -1
+mesh.position.x = 0
+mesh.position.y = 1
+```
 
 
 <table>
@@ -120,7 +131,13 @@ mesh.rotation.y = .5 // .5 radians (28.65 degrees) around the y-axis
 </table>
 
 
+```js
+console.log(mesh.position.length()) // get the length of the vector from the origin to the mesh
+```
 
+```js
+console.log(mesh.position.distanceTo(camera.position)) // get the distance between the mesh and the camera
+```
 
 
 ### 2.2 Scale
