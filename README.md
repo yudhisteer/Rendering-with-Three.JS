@@ -89,6 +89,44 @@ mesh.rotation.y = .5 // .5 radians (28.65 degrees) around the y-axis
 <a name="t"></a>
 ## 2. Transformations
 
+### 2.1 Position
+
+
+<table>
+  <tr>
+    <th></th>
+    <th>-1</th>
+    <th>0</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <td>Changing X</td>
+    <td><img src="https://github.com/user-attachments/assets/5522fe73-8dc8-4c61-b0e4-fc552ce3d232" alt="Image -1, Row 2" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/fb6c2899-e32d-4f80-9b60-3d85d69086a0" alt="Image 0, Row 2" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/663f8e6f-1763-4520-b408-ef648293b5d0" alt="Image 1, Row 2" width="150"></td>
+  </tr>
+  <tr>
+    <td>Changing Y</td>
+    <td><img src="https://github.com/user-attachments/assets/44eea150-1345-48b0-8b52-a0d94da18d11" alt="Image -1, Row 1" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/b1c68b1d-1749-4ace-9dab-24f9cc640a05" alt="Image 0, Row 1" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/592368b6-30f9-446e-b72d-4e25a3890088" alt="Image 1, Row 1" width="150"></td>
+  </tr>
+  <tr>
+    <td>Changing Z</td>
+    <td><img src="https://github.com/user-attachments/assets/35e2e778-936b-4db3-874b-8b5448702b09" alt="Image -1, Row 3" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/6e370754-5ff3-4c9a-a6da-ad6dd08dbe97" alt="Image 0, Row 3" width="150"></td>
+    <td><img src="https://github.com/user-attachments/assets/b7cace68-069b-4f63-9c38-1fa03093ed36" alt="Image 1, Row 3" width="150"></td>
+  </tr>
+</table>
+
+
+
+
+
+### 2.2 Scale
+
+### 2.3 Rotation
+
 
 
 ------------
