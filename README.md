@@ -219,6 +219,10 @@ console.log(mesh.position.distanceTo(camera.position)) // get the distance betwe
 </table>
 
 
+![image](https://github.com/user-attachments/assets/accb23ed-600f-4f4a-b5c1-bc7524366cd4)
+
+
+
 ------------
 
 
